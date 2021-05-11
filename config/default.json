@@ -1,0 +1,10 @@
+{
+    "express":{
+        "port":3001,
+        "debug":5959,
+        "host":"product-service"
+    },
+    "loglevel": "info",
+    "productreview": "http://localhost:3000/review",
+    "productcatalogue": "https://www.adidas.co.uk/api/products"
+}

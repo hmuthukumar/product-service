@@ -6,6 +6,7 @@ WORKDIR /usr/src/app
 #install dependencies
 COPY package.json /usr/src/app
 RUN npm install
+RUN npm install pm2@latest -g
 #bundle app src
 COPY . /usr/src/app
 EXPOSE 3001

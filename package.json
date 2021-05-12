@@ -6,7 +6,9 @@
   "scripts": {
     "start": "npm run build && node ./dist/index.js",
     "build": "tsc",
-    "serve": "nodemon"
+    "serve": "nodemon",
+    "start:prod": "npm run build && pm2 start ./dist/index.js -i max",
+    "stop": "pm2 stop all"
   },
   "dependencies": {
     "@etsoo/restclient": "^1.0.33",
@@ -19,6 +21,7 @@
     "express": "^4.16.2",
     "helmet": "^4.6.0",
     "lodash": "^4.17.21",
+    "pm2": "^4.5.6",
     "reflect-metadata": "^0.1.10",
     "rimraf": "^2.6.2",
     "routing-controllers": "^0.7.6",

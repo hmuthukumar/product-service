@@ -12,3 +12,10 @@ PM2 is used to spawn multiple web servers in cluster mode within a single machin
 
 $ npm run start:prod
 
+# Start the server in a single instance
+
+$ npm start
+
+# Start the server in developer mode
+
+$ npm run serve

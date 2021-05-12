@@ -10,4 +10,4 @@ RUN npm install pm2@latest -g
 #bundle app src
 COPY . /usr/src/app
 EXPOSE 3001
-CMD [ "npm" , "start" ]
+CMD [ "npm" , "run", "start:prod" ]

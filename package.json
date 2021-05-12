@@ -7,8 +7,8 @@
     "start": "npm run build && node ./dist/index.js",
     "build": "tsc",
     "serve": "nodemon",
-    "start:prod": "npm run build && pm2 start ./dist/index.js -i max",
-    "stop": "pm2 stop all"
+    "start:prod": "npm run build && pm2 start --name product-service ./dist/index.js -i max",
+    "stop:prod": "pm2 stop product-service"
   },
   "dependencies": {
     "@etsoo/restclient": "^1.0.33",

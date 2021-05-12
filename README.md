@@ -2,7 +2,7 @@
 
 # Prequisites
 
-The NPM script assumes that the pm2 installed globally using either of the below commands
+The NPM script assumes that the pm2 installed globally using either of the below commands  <br />
 $ npm install pm2@latest -g
 # or
 $ yarn global add pm2

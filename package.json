@@ -9,6 +9,7 @@
     "serve": "nodemon",
     "start:prod": "npm run build && pm2 start --name product-service ./dist/index.js -i max",
     "stop:prod": "pm2 stop product-service",
+    "test": "npm run build && mocha -r ts-node/register  ./**/*.test.ts",
     "test:serve": "start tsc -w & nodemon --watch . --ext ts --exec \"mocha -r ts-node/register  ./**/*.test.ts\""
   },
   "dependencies": {
